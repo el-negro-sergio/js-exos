@@ -1,4 +1,4 @@
-<h1 align='center'>Code Daily</h1>
+<h1 align='center'>Exos-JavaScript</h1>
 
 <div align='center'>
 <a href='http://thehackingproject.org/'>
@@ -6,7 +6,17 @@
 </a>
 </div>
 
-<p align='center'>Daily coding challenges for the THP family</p>
+<p align='center'>Daily forgetting what we learned yesterday to quick learn another thing today</p>
 
-<a href='http://thehackingproject.org/'>![code with](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-THP-ff69b4.svg)
-</a>
+## Instructions
+
+  - Clone Repo
+  - Open test_js.html
+  - Go to the bottom of the file and un-comment the .js file you want to see
+  - On your browser, press alt+cmd+I
+  - Check the results with the THP checklist
+  - Contact me in slack and send me an screencap of the "non" you putted on the check list
+  - I know that the last two points are not in my Repo
+  - If something is not clear lets 📞
+
+  ## have a good day

@@ -25,10 +25,6 @@ for(let index in rented){  console.log(rented[index]!== 0);
 };
 console.log('all books have been rented, at lease once')
 
-
-
-
-
 // 2) Quel est livre le plus emprunté ?
 
 console.log("\n2) Quel est livre le plus emprunté ?\n")
