@@ -19,4 +19,4 @@
   - I know that the last two points are not in my Repo
   - If something is not clear lets 📞
 
-<p align='center'>## Have a good day!</p>
+<p align='center'><strong> Have a good day!</strong></p>
