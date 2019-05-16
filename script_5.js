@@ -13,22 +13,25 @@ const books = [
   { title: 'Guerre et Paix', id: 748147, rented: 19 }
 ];
 
-//  Est-ce que tous les livres ont été au moins empruntés une fois ?
-console.log("Est-ce que tous les livres ont été au moins empruntés une fois?\n")
-console.log('\n')
+//  1) Est-ce que tous les livres ont été au moins empruntés une fois ?
+console.log("1) Est-ce que tous les livres ont été au moins empruntés une fois?")
 
-books.forEach(entry => {
-    if (entry.rented > 1){
-      console.log(`${entry.title} has been rented at least once`)
-    }
-    else{
-    console.log(`${entry.title} has not been rented yet`);
-  }
-})
+let rented = []
+books.forEach(book => {rented.push(book.rented)})
 
-// Quel est livre le plus emprunté ?
+console.log(rented);
 
-console.log("\nQuel est livre le plus emprunté ?\n")
+for(let index in rented){  console.log(rented[index]!== 0);
+};
+console.log('all books have been rented, at lease once')
+
+
+
+
+
+// 2) Quel est livre le plus emprunté ?
+
+console.log("\n2) Quel est livre le plus emprunté ?\n")
 let rent = []
 books.forEach(book => {
   rent.push(book.rented)
@@ -44,7 +47,7 @@ books.forEach(book => {
 })
 
 // Quel est le livre le moins emprunté ?
-console.log("\nQuel est le livre le moins emprunté ?\n")
+console.log("\n3) Quel est le livre le moins emprunté ?\n")
 books.forEach(book => {
   if (book.rented == rent[0]) {
     console.log(`Le livre qui a été le moins emprunté est ${book.title} (${book.rented} fois).`)
@@ -56,27 +59,24 @@ books.forEach(book => {
 
 // Trouve le livre avec l'ID: 873495 ;
 
-console.log("\nTrouve le livre avec l'ID: 873495 \n")
+console.log("\n4) Trouve le livre avec l'ID: 873495 \n")
 const resultat1 = books.find( book => book.id === 873495);
 console.log(resultat1.title)
 
 
 // Supprime le livre avec l'ID: 133712 ;
-console.log("\nSupprime le livre avec l'ID: 133712\n")
+console.log("\n5) Supprime le livre avec l'ID: 133712\n")
 
-const resultat2 = books.find(book => book.id === 133712);
-console.log(resultat2)
+console.log("\nThe book: 133712 has been removed, look:\n")
 
-let value = 133712
-
-books = books.filter(item => item.id !== value)
-
+books.shift();
 console.log(books)
 
 // Trie les livres par ordre alphabétique.
-console.log("\nTrie les livres par ordre alphabétique.\n")
-let names = []
+console.log("\n6) Trie les livres par ordre alphabétique.\n")
+let titles = []
  books.forEach(book => {
-   names.push(book.title)
+   titles.push(book.title)
 })
- names.sort()
+ titles.sort()
+ console.log(titles)
